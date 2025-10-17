@@ -1,0 +1,240 @@
+/* ---------- ESTILOS GENERALES ---------- */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e293b;
+  --bg-color: #f8fafc;
+  --text-color: #0f172a;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ---------- header ---------- */
+header {
+  background: var(--secondary-color);
+  color: white;
+  padding: 0.6rem 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 55px;
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem 8rem 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  position: relative;
+}
+
+.hero-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+/* ---------- formulario ---------- */
+.registro {
+  padding: 3rem 0;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.85rem;
+  display: none;
+}
+
+/* ---------- productos ---------- */
+.productos {
+  padding: 4rem 1rem;
+  background: #f8fafc;
+}
+
+.productos h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.producto {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.toggle {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle:hover {
+  background: #1e3a8a;
+}
+
+.detalle {
+  display: none;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* ---------- footer ---------- */
+footer {
+  background: var(--secondary-color);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
